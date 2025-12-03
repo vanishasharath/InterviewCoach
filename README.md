@@ -1,4 +1,5 @@
 AI-InterviewCoach
+
 📌 Overview
 
 AI-InterviewCoach is an AI-powered resume–JD analysis and interview preparation system that evaluates how well a candidate’s resume matches a job description, identifies missing skills, generates personalized improvement suggestions, and produces tailored interview questions based on gaps.

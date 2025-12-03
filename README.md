@@ -7,6 +7,7 @@ Built using FastAPI (Python) for the backend and React for the frontend, the sys
 It acts like a smart recruiter: analyzing resumes, comparing them with JDs, scoring compatibility, and preparing the user for interviews.
 
 🎯 Objectives
+
 Provide a comprehensive resume vs JD match analysis.
 Extract and compare skills from resume, project sections, certifications, and JD.
 Compute semantic match using transformer embeddings.
@@ -15,6 +16,7 @@ Generate personalized interview questions based on weaknesses or required skills
 Suggest resume improvements aligned with industry ATS standards.
 
 🧠 Key Features
+
 📄 Resume & JD Matching Engine
 Computes two readiness scores:
 ✔ Score (With Experience)
@@ -45,6 +47,7 @@ Synonym/related-term matching,
 Context-based alignment beyond exact keywords,
 
 🎯 Matched & Missing Skills
+
 The system produces:
 ✔ Matched Skills (present in both Resume & JD),
 ❌ Missing Skills (required by JD but not found in Resume),
@@ -52,6 +55,7 @@ The system produces:
 💡 Resume Improvement Suggestions
 
 🗣️ AI-Generated Interview Questions
+
 Generated dynamically based on:
 Missing skills,
 Weak skill categories,
@@ -87,6 +91,7 @@ Results displayed on frontend
 🧰 Technologies & Tools
 
 🔧 Backend
+
 FastAPI – API server,
 spaCy NLP – tokenization, phrase extraction,
 SentenceTransformer (MiniLM-L6-v2) – embeddings,
@@ -95,6 +100,7 @@ PyPDF2 / python-docx – Resume/JD parsing,
 Uvicorn – server runtime,
 
 🎨 Frontend
+
 React – single-page application,
 Axios – API communication,
 JavaScript / JSX,
@@ -122,6 +128,7 @@ AI-InterviewCoach/
 └── README.md
 
 🚀 Quickstart
+
 Backend
 python3 -m venv .venv
 source .venv/bin/activate

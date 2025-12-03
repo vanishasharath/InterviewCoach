@@ -130,12 +130,13 @@ AI-InterviewCoach/
 🚀 Quickstart
 
 Backend
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python backend/main.py
+python3 -m venv .venv,
+source .venv/bin/activate,
+pip install -r requirements.txt,
+python backend/main.py,
 
 Frontend
-cd frontend
-npm install
-npm start
+cd frontend,
+npm install,
+npm start,
+

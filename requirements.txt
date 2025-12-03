@@ -1,0 +1,20 @@
+# Core FastAPI
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+
+# CORS and middleware
+python-multipart==0.0.6
+
+# Optional but recommended
+python-dotenv==1.0.0
+
+# For rate limiting (optional)
+# slowapi==0.1.9
+
+# For testing (optional)
+# pytest==7.4.3
+# httpx==0.25.2
+
+pdfplumber
+docx2txt

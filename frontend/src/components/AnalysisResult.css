@@ -1,0 +1,67 @@
+.analysis-card {
+    max-width: 850px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+  }
+  
+  .metric-block {
+    margin-bottom: 1rem;
+  }
+  
+  .metric-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.35rem;
+  }
+  
+  .progress-container {
+    width: 100%;
+    height: 10px;
+    border-radius: 999px;
+    background: #e5e7eb;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background: #22c55e;
+    transition: width 0.4s ease;
+  }
+  
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .badge {
+    padding: 6px 12px;
+    background: #f3f4f6;
+    border-radius: 999px;
+    font-size: 13px;
+  }
+  
+  .success {
+    background: #dcfce7;
+    color: #15803d;
+  }
+  
+  .danger {
+    background: #fee2e2;
+    color: #b91c1c;
+  }
+  
+  ul {
+    padding-left: 1.25rem;
+    line-height: 1.6;
+  }
+  
+  h2, h3 {
+    margin-top: 1.25rem;
+  }
+  

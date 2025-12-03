@@ -27,76 +27,77 @@ Experience Match %
 
 🔍 Skill Extraction & Categorization
 Extracts skills from:
-Resume
-Projects section
-Certifications section
-Job Description
+Resume,
+Projects section,
+Certifications section,
+Job Description,
 
 Categorizes into:
-Resume Skills
-Project Skills
-Certification Skills
+Resume Skills,
+Project Skills,
+Certification Skills,
 
 🧮 Semantic Similarity Scoring
 
 Uses SentenceTransformer MiniLM-L6-v2 to compute:
-Resume phrase ↔ JD phrase similarity
-Synonym/related-term matching
-Context-based alignment beyond exact keywords
+Resume phrase ↔ JD phrase similarity,
+Synonym/related-term matching,
+Context-based alignment beyond exact keywords,
 
 🎯 Matched & Missing Skills
 The system produces:
-✔ Matched Skills (present in both Resume & JD)
-❌ Missing Skills (required by JD but not found in Resume)
+✔ Matched Skills (present in both Resume & JD),
+❌ Missing Skills (required by JD but not found in Resume),
 
 💡 Resume Improvement Suggestions
 
 🗣️ AI-Generated Interview Questions
 Generated dynamically based on:
-Missing skills
-Weak skill categories
-Unfamiliar technologies
-General behavioral patterns
+Missing skills,
+Weak skill categories,
+Unfamiliar technologies,
+General behavioral patterns,
 
 
 🏗️ Architecture Flow
 
 Resume + JD Uploaded → Text Extraction → NLP Skill Extraction → Semantic Similarity → Match Scores → Suggestions → Tailored Interview Questions
-User uploads Resume + JD via frontend
-Backend extracts text using PDF/DOCX readers
-spaCy pipeline extracts skills, keywords, entities
-MiniLM sentence-transformer computes semantic vectors
+
+User uploads Resume + JD via frontend,
+Backend extracts text using PDF/DOCX readers,
+spaCy pipeline extracts skills, keywords, entities,
+MiniLM sentence-transformer computes semantic vectors,
 
 Cosine similarity produces:
-Skills Match
-Semantic Match
-Experience Match
+Skills Match,
+Semantic Match,
+Experience Match,
 
 System identifies:
-Resume Skills
-Project Skills
-Certification Skills
-Matched Skills
-Missing Skills
+Resume Skills,
+Project Skills,
+Certification Skills,
+Matched Skills,
+Missing Skills,
 
-Improvement suggestions generated
-Interview questions generated from gaps
+Improvement suggestions generated,
+Interview questions generated from gaps,
 Results displayed on frontend
 
 🧰 Technologies & Tools
 
 🔧 Backend
-FastAPI – API server
-spaCy NLP – tokenization, phrase extraction
-SentenceTransformer (MiniLM-L6-v2) – embeddings
-NumPy – similarity math
-PyPDF2 / python-docx – Resume/JD parsing
-Uvicorn – server runtime
+FastAPI – API server,
+spaCy NLP – tokenization, phrase extraction,
+SentenceTransformer (MiniLM-L6-v2) – embeddings,
+NumPy – similarity math,
+PyPDF2 / python-docx – Resume/JD parsing,
+Uvicorn – server runtime,
 
 🎨 Frontend
-React – single-page application
-Axios – API communication
-JavaScript / JSX
+React – single-page application,
+Axios – API communication,
+JavaScript / JSX,
 
 📄 Data
 skill_corpus.txt – canonical skills reference list

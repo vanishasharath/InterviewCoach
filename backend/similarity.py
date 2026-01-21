@@ -6,8 +6,9 @@ from typing import List, Dict, Tuple, Optional, Set
 from collections import Counter
 import re
 
-from sentence_transformers import SentenceTransformer, util
-import torch
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
 
 # Set up logging
 logger = logging.getLogger(__name__)
@@ -102,28 +103,25 @@ class SimilarityCalculator:
             return 0.0
     
     def semantic_similarity(self, text1: str, text2: str) -> float:
-        if not text1 or not text2:
-            logger.warning("Empty text provided for semantic similarity")
-            return 0.0
-        
-        try:
-            max_length = 5000
-            text1 = text1[:max_length]
-            text2 = text2[:max_length]
-            
-            embedding1 = embedder.encode(text1, convert_to_tensor=True)
-            embedding2 = embedder.encode(text2, convert_to_tensor=True)
-            
-            similarity = util.cos_sim(embedding1, embedding2).item()
-            
-            similarity = max(0.0, min(1.0, similarity))
-            
-            logger.debug(f"Semantic similarity calculated: {similarity:.4f}")
-            return similarity
-            
-        except Exception as e:
-            logger.error(f"Error calculating semantic similarity: {e}")
-            return 0.0
+    if not text1 or not text2:
+        return 0.0
+
+    try:
+        vectorizer = TfidfVectorizer(
+            stop_words="english",
+            max_features=5000,
+            ngram_range=(1, 2)
+        )
+
+        tfidf = vectorizer.fit_transform([text1, text2])
+        similarity = cosine_similarity(tfidf[0:1], tfidf[1:2])[0][0]
+
+        return max(0.0, min(1.0, float(similarity)))
+
+    except Exception as e:
+        logger.error(f"TF-IDF semantic similarity error: {e}")
+        return 0.0
+
     
     def calculate_skill_match(self, 
                             resume_skills: List[str], 

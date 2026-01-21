@@ -44,7 +44,7 @@ Certification Skills,
 Uses SentenceTransformer MiniLM-L6-v2 to compute:
 Resume phrase ↔ JD phrase similarity,
 Synonym/related-term matching,
-Context-based alignment beyond exact keywords,
+Context-based alignment beyond exact keywords.
 
 🎯 Matched & Missing Skills
 
@@ -70,7 +70,7 @@ Resume + JD Uploaded → Text Extraction → NLP Skill Extraction → Semantic S
 User uploads Resume + JD via frontend,
 Backend extracts text using PDF/DOCX readers,
 spaCy pipeline extracts skills, keywords, entities,
-MiniLM sentence-transformer computes semantic vectors,
+Sentence-transformer computes semantic vectors,
 
 Cosine similarity produces:
 Skills Match,

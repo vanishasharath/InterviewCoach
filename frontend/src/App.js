@@ -4,6 +4,8 @@ import axios from "axios";
 import AnalysisResult from "./components/AnalysisResult.jsx";
 import UploadPage from "./components/AddResumeJS.jsx";
 
+const API_BASE_URL = process.env.REACT_APP_API_URL;
+
 function App() {
   const [file, setFile] = useState(null);
   const [jobDesc, setJobDesc] = useState("");
@@ -22,9 +24,15 @@ function App() {
     formData.append("job_description", jobDesc);
 
     try {
-      const res = await axios.post("http://127.0.0.1:8000/analyze", formData, {
-        headers: { "Content-Type": "multipart/form-data" },
-      });
+      const res = await axios.post(
+        `${API_BASE_URL}/analyze`,
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
 
       console.log("API Response:", res.data);
       setAnalysisResult(res.data);

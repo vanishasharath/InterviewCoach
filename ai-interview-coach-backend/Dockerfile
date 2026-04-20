@@ -16,7 +16,6 @@ COPY backend/requirements.txt requirements.txt
 RUN pip install --upgrade pip && pip install --no-cache-dir -r requirements.txt
 
 
-RUN python -m spacy download en_core_web_sm
 # (or en_core_web_lg if you chose lg)
 
 COPY backend /app/backend

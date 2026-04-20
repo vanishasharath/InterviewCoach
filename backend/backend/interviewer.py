@@ -3,7 +3,8 @@ import re
 import os
 import cohere
 
-client = cohere.ClientV2(os.environ.get("COHERE_API_KEY"))
+# Old/Legacy Syntax (v4.x)
+client = cohere.Client(os.environ.get("COHERE_API_KEY"))
 
 SYSTEM_PROMPT = """You are an expert technical interviewer conducting a live interview.
 

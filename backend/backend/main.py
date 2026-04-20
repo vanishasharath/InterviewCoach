@@ -12,12 +12,12 @@ from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 
 from .interviewer import evaluate_and_advance
-from backend.extractor import (
+from .extractor import (
     extract_from_file,
     extract_information,
     extract_experience_years,
 )
-from backend.similarity import compute_similarity
+from .similarity import compute_similarity
 
 from dotenv import load_dotenv
 load_dotenv()

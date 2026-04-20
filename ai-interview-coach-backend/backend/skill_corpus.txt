@@ -1,0 +1,1129 @@
+# skill_corpus.txt
+# Comprehensive skill database for resume analysis
+# Format: one skill per line, lowercase
+# Lines starting with # are comments and will be ignored
+
+# ============================================
+# PROGRAMMING LANGUAGES
+# ============================================
+
+# General Purpose
+python
+java
+javascript
+typescript
+c++
+cpp
+c#
+csharp
+c
+ruby
+go
+golang
+rust
+php
+perl
+swift
+kotlin
+scala
+r
+dart
+lua
+julia
+haskell
+elixir
+clojure
+erlang
+groovy
+operating systems
+computer networks
+os
+cn
+networking
+os concepts
+tcp/ip
+dns
+http
+memory management
+process management
+cpu scheduling
+file systems
+EOF
+
+
+# Scripting
+bash
+shell
+powershell
+batch
+
+# Web/Markup
+html
+html5
+css
+css3
+xml
+json
+yaml
+markdown
+
+# Database Query Languages
+sql
+plsql
+tsql
+nosql
+
+# ============================================
+# WEB DEVELOPMENT - FRONTEND
+# ============================================
+
+# JavaScript Frameworks/Libraries
+react
+reactjs
+react.js
+react native
+angular
+angularjs
+vue
+vuejs
+vue.js
+svelte
+ember
+backbone
+jquery
+next.js
+nextjs
+nuxt
+nuxtjs
+gatsby
+preact
+
+# CSS Frameworks/Preprocessors
+bootstrap
+tailwind
+tailwind css
+material ui
+mui
+sass
+scss
+less
+styled components
+css modules
+bulma
+foundation
+semantic ui
+
+# Build Tools/Bundlers
+webpack
+vite
+parcel
+rollup
+gulp
+grunt
+browserify
+esbuild
+
+# State Management
+redux
+mobx
+vuex
+pinia
+recoil
+zustand
+context api
+
+# Testing (Frontend)
+jest
+enzyme
+react testing library
+cypress
+playwright
+selenium
+puppeteer
+karma
+jasmine
+mocha
+chai
+
+# ============================================
+# WEB DEVELOPMENT - BACKEND
+# ============================================
+
+# Node.js
+nodejs
+node.js
+express
+expressjs
+nestjs
+fastify
+koa
+hapi
+sails
+
+# Python Frameworks
+django
+flask
+fastapi
+pyramid
+tornado
+bottle
+aiohttp
+starlette
+celery
+
+# Java Frameworks
+spring
+spring boot
+spring mvc
+spring security
+hibernate
+struts
+jsf
+play framework
+micronaut
+quarkus
+
+# Ruby Frameworks
+rails
+ruby on rails
+sinatra
+
+# PHP Frameworks
+laravel
+symfony
+codeigniter
+cakephp
+yii
+slim
+zend
+
+# .NET
+asp.net
+.net
+.net core
+blazor
+entity framework
+
+# Go Frameworks
+gin
+echo
+fiber
+beego
+
+# Other Backend
+graphql
+rest
+restful
+soap
+grpc
+websocket
+api
+microservices
+serverless
+lambda
+
+# ============================================
+# DATABASES
+# ============================================
+
+# Relational (SQL)
+mysql
+postgresql
+postgres
+oracle
+sql server
+sqlite
+mariadb
+db2
+microsoft sql server
+mssql
+
+# NoSQL - Document
+mongodb
+mongo
+couchdb
+couchbase
+firebase
+firestore
+dynamodb
+
+# NoSQL - Key-Value
+redis
+memcached
+etcd
+
+# NoSQL - Column
+cassandra
+hbase
+bigtable
+
+# NoSQL - Graph
+neo4j
+amazon neptune
+arangodb
+
+# Search/Analytics
+elasticsearch
+solr
+opensearch
+splunk
+
+# Data Warehousing
+snowflake
+redshift
+bigquery
+teradata
+hive
+presto
+trino
+
+# ============================================
+# CLOUD PLATFORMS & SERVICES
+# ============================================
+
+# Amazon Web Services (AWS)
+aws
+amazon web services
+ec2
+s3
+rds
+lambda
+dynamodb
+cloudfront
+route 53
+vpc
+iam
+cloudwatch
+elastic beanstalk
+ecs
+eks
+fargate
+sagemaker
+emr
+kinesis
+sns
+sqs
+api gateway
+step functions
+cloudformation
+
+# Microsoft Azure
+azure
+microsoft azure
+azure functions
+azure devops
+azure ad
+cosmos db
+azure sql
+azure storage
+azure kubernetes service
+aks
+
+# Google Cloud Platform (GCP)
+gcp
+google cloud
+google cloud platform
+compute engine
+cloud storage
+cloud sql
+bigquery
+cloud functions
+app engine
+kubernetes engine
+gke
+cloud run
+pub/sub
+dataflow
+dataproc
+
+# Other Cloud
+ibm cloud
+oracle cloud
+alibaba cloud
+digital ocean
+linode
+heroku
+vercel
+netlify
+cloudflare
+railway
+
+# ============================================
+# DEVOPS & INFRASTRUCTURE
+# ============================================
+
+# Containers
+docker
+kubernetes
+k8s
+podman
+containerd
+docker compose
+docker swarm
+
+# CI/CD
+jenkins
+gitlab ci
+github actions
+circleci
+travis ci
+bamboo
+teamcity
+azure pipelines
+bitbucket pipelines
+argo cd
+flux
+spinnaker
+
+# Infrastructure as Code
+terraform
+ansible
+puppet
+chef
+saltstack
+vagrant
+packer
+cloudformation
+arm templates
+pulumi
+
+# Monitoring & Logging
+prometheus
+grafana
+elk stack
+elasticsearch
+logstash
+kibana
+datadog
+new relic
+splunk
+sentry
+nagios
+zabbix
+pagerduty
+
+# Web Servers
+nginx
+apache
+iis
+tomcat
+jetty
+lighttpd
+caddy
+
+# Version Control
+git
+github
+gitlab
+bitbucket
+svn
+mercurial
+perforce
+
+# ============================================
+# DATA SCIENCE & MACHINE LEARNING
+# ============================================
+
+# Machine Learning
+machine learning
+deep learning
+artificial intelligence
+ai
+ml
+neural networks
+cnn
+rnn
+lstm
+transformer
+reinforcement learning
+supervised learning
+unsupervised learning
+semi supervised learning
+transfer learning
+ensemble learning
+
+# ML Frameworks/Libraries
+tensorflow
+pytorch
+keras
+scikit learn
+sklearn
+xgboost
+lightgbm
+catboost
+h2o
+mlflow
+hugging face
+transformers
+langchain
+
+# Data Processing
+pandas
+numpy
+scipy
+dask
+polars
+pyspark
+apache spark
+hadoop
+mapreduce
+
+# Data Visualization
+matplotlib
+seaborn
+plotly
+bokeh
+d3.js
+d3
+tableau
+power bi
+looker
+qlik
+superset
+
+# NLP
+nlp
+natural language processing
+spacy
+nltk
+gensim
+word2vec
+bert
+gpt
+llm
+large language models
+
+# Computer Vision
+opencv
+computer vision
+image processing
+yolo
+mask rcnn
+resnet
+vgg
+
+# Statistics
+statistics
+statistical analysis
+hypothesis testing
+regression
+classification
+clustering
+time series
+forecasting
+
+# ============================================
+# MOBILE DEVELOPMENT
+# ============================================
+
+# iOS
+ios
+swift
+swiftui
+objective-c
+xcode
+cocoapods
+core data
+uikit
+
+# Android
+android
+kotlin
+java
+android studio
+jetpack compose
+gradle
+room
+retrofit
+dagger
+
+# Cross-Platform
+react native
+flutter
+xamarin
+ionic
+cordova
+phonegap
+capacitor
+
+# ============================================
+# DATA ENGINEERING
+# ============================================
+
+# ETL Tools
+airflow
+apache airflow
+luigi
+prefect
+dagster
+nifi
+talend
+informatica
+pentaho
+
+# Streaming
+kafka
+apache kafka
+spark streaming
+flink
+storm
+pulsar
+rabbitmq
+activemq
+
+# Big Data
+hadoop
+spark
+hive
+pig
+sqoop
+oozie
+hbase
+hdfs
+yarn
+
+# ============================================
+# TESTING & QA
+# ============================================
+
+# Testing Types
+unit testing
+integration testing
+e2e testing
+end to end testing
+acceptance testing
+performance testing
+load testing
+stress testing
+security testing
+penetration testing
+api testing
+automation testing
+manual testing
+regression testing
+
+# Testing Tools
+junit
+testng
+pytest
+unittest
+selenium
+cypress
+playwright
+cucumber
+postman
+jmeter
+gatling
+locust
+appium
+espresso
+xctest
+
+# Test Frameworks
+jest
+mocha
+chai
+jasmine
+karma
+enzyme
+react testing library
+vue test utils
+
+# ============================================
+# SECURITY & CRYPTOGRAPHY
+# ============================================
+
+security
+cybersecurity
+information security
+application security
+network security
+cloud security
+oauth
+oauth2
+jwt
+saml
+ssl
+tls
+encryption
+cryptography
+penetration testing
+ethical hacking
+vulnerability assessment
+firewall
+ids
+ips
+siem
+soc
+pki
+iam
+identity and access management
+zero trust
+devsecops
+
+# ============================================
+# ARCHITECTURE & DESIGN
+# ============================================
+
+# Architectural Patterns
+microservices
+monolithic
+service oriented architecture
+soa
+event driven architecture
+cqrs
+event sourcing
+clean architecture
+hexagonal architecture
+onion architecture
+mvc
+mvvm
+mvp
+
+# Design Patterns
+design patterns
+singleton
+factory
+observer
+strategy
+decorator
+adapter
+facade
+proxy
+command
+chain of responsibility
+solid principles
+dry
+kiss
+yagni
+
+# System Design
+system design
+scalability
+high availability
+load balancing
+caching
+cdn
+distributed systems
+cap theorem
+eventual consistency
+acid
+base
+sharding
+replication
+partitioning
+
+# ============================================
+# METHODOLOGIES & PRACTICES
+# ============================================
+
+# Agile
+agile
+scrum
+kanban
+lean
+extreme programming
+xp
+safe
+sprint
+backlog
+user stories
+story points
+
+# DevOps Culture
+devops
+gitops
+shift left
+continuous integration
+ci
+continuous delivery
+cd
+continuous deployment
+ci/cd
+blue green deployment
+canary deployment
+rolling deployment
+
+# Software Development
+tdd
+test driven development
+bdd
+behavior driven development
+ddd
+domain driven design
+pair programming
+code review
+refactoring
+
+# ============================================
+# COLLABORATION & PROJECT MANAGEMENT
+# ============================================
+
+jira
+confluence
+trello
+asana
+monday.com
+clickup
+notion
+slack
+microsoft teams
+zoom
+miro
+figma
+adobe xd
+sketch
+invision
+
+# ============================================
+# NETWORKING
+# ============================================
+
+networking
+tcp/ip
+http
+https
+dns
+dhcp
+routing
+switching
+vpn
+nat
+load balancing
+cdn
+wan
+lan
+vlan
+bgp
+ospf
+mpls
+
+# ============================================
+# OPERATING SYSTEMS
+# ============================================
+
+linux
+unix
+ubuntu
+debian
+centos
+rhel
+red hat
+fedora
+arch linux
+windows
+windows server
+macos
+freebsd
+
+# ============================================
+# BUSINESS & SOFT SKILLS
+# ============================================
+
+# Communication
+communication
+presentation
+technical writing
+documentation
+stakeholder management
+client relations
+
+# Leadership
+leadership
+team management
+mentoring
+coaching
+conflict resolution
+decision making
+
+# Analytical
+problem solving
+critical thinking
+analytical skills
+research
+troubleshooting
+
+# Project Management
+project management
+time management
+resource allocation
+risk management
+budget management
+
+# Business
+business analysis
+requirements gathering
+process improvement
+change management
+strategic planning
+
+# ============================================
+# DOMAIN-SPECIFIC
+# ============================================
+
+# Finance/Trading
+fintech
+trading
+quantitative analysis
+risk management
+portfolio management
+derivatives
+blockchain
+cryptocurrency
+defi
+smart contracts
+solidity
+
+# Healthcare
+healthcare
+medical imaging
+hl7
+fhir
+hipaa
+ehr
+emr
+
+# E-commerce
+e-commerce
+payment gateway
+stripe
+paypal
+shopify
+magento
+woocommerce
+
+# Gaming
+game development
+unity
+unreal engine
+godot
+game design
+3d modeling
+animation
+
+# IoT
+iot
+internet of things
+embedded systems
+arduino
+raspberry pi
+mqtt
+edge computing
+
+# AR/VR
+augmented reality
+virtual reality
+ar
+vr
+unity 3d
+arkit
+arcore
+
+# ============================================
+# SPECIALIZED TOOLS & TECHNOLOGIES
+# ============================================
+
+# Version Control
+git flow
+trunk based development
+
+# Package Managers
+npm
+yarn
+pip
+maven
+gradle
+nuget
+composer
+cargo
+
+# API Tools
+postman
+insomnia
+swagger
+openapi
+graphiql
+
+# Content Management
+wordpress
+drupal
+joomla
+contentful
+strapi
+sanity
+
+# Message Queues
+rabbitmq
+kafka
+activemq
+zeromq
+nats
+
+# Caching
+redis
+memcached
+varnish
+cloudflare
+
+# Observability
+opentelemetry
+jaeger
+zipkin
+new relic apm
+
+# Feature Flags
+launchdarkly
+split
+unleash
+
+# A/B Testing
+optimizely
+google optimize
+
+# Analytics
+google analytics
+mixpanel
+amplitude
+segment
+heap
+
+# ============================================
+# CERTIFICATIONS (Common Keywords)
+# ============================================
+
+aws certified
+azure certified
+google cloud certified
+certified kubernetes administrator
+cka
+certified kubernetes application developer
+ckad
+certified scrum master
+csm
+pmp
+prince2
+itil
+cissp
+ceh
+comptia
+ccna
+ccnp
+ccie
+ocjp
+oracle certified
+microsoft certified
+
+# ============================================
+# PROGRAMMING CONCEPTS
+# ============================================
+
+object oriented programming
+oop
+functional programming
+procedural programming
+async
+asynchronous
+multithreading
+concurrency
+parallelism
+garbage collection
+memory management
+data structures
+algorithms
+recursion
+dynamic programming
+greedy algorithms
+divide and conquer
+sorting
+searching
+graphs
+trees
+linked lists
+stacks
+queues
+hash tables
+heaps
+
+# ============================================
+# WEB CONCEPTS
+# ============================================
+
+responsive design
+progressive web apps
+pwa
+single page application
+spa
+server side rendering
+ssr
+static site generation
+ssg
+jamstack
+web accessibility
+wcag
+seo
+search engine optimization
+cross browser compatibility
+mobile first
+web performance
+lazy loading
+code splitting
+tree shaking
+
+# ============================================
+# API & INTEGRATION
+# ============================================
+
+rest api
+restful api
+graphql api
+soap api
+webhooks
+rpc
+json rpc
+xml rpc
+api gateway
+api versioning
+rate limiting
+oauth
+api documentation
+swagger
+openapi specification
+postman
+
+# ============================================
+# QUALITY & COMPLIANCE
+# ============================================
+
+code quality
+code review
+static analysis
+sonarqube
+eslint
+prettier
+linting
+code coverage
+technical debt
+refactoring
+gdpr
+hipaa
+pci dss
+sox
+iso 27001
+compliance
+
+# ============================================
+# EMERGING TECHNOLOGIES
+# ============================================
+
+web3
+metaverse
+nft
+dao
+quantum computing
+edge computing
+5g
+ipfs
+federated learning
+mlops
+aiops
+dataops

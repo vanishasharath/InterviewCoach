@@ -11,7 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel, Field
 
-from backend.interviewer import evaluate_and_advance
+from interviewer import evaluate_and_advance
 from backend.extractor import (
     extract_from_file,
     extract_information,

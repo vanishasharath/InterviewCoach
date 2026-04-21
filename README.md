@@ -2,6 +2,7 @@
 
 An AI-powered full-stack system that evaluates how well a candidate's resume matches a job description and conducts a live adaptive interview that reacts to answers in real time using Cohere LLM.
 The system acts like a virtual recruiter — analyzing resumes, identifying skill gaps, scoring semantic similarity, and then dynamically interviewing the candidate based on those gaps.
+
 ---
 ## 🌐 Live Demo
 * Frontend : ai-interview-coach-three-rosy.vercel.app

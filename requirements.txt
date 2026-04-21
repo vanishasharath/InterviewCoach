@@ -2,14 +2,10 @@ fastapi
 uvicorn
 numpy
 pandas
-scikit-learn==1.3.2
 nltk
 python-multipart
-sentence-transformers==2.2.2
-torch
 spacy==3.7.2
 PyPDF2
 python-docx
 cohere
-huggingface_hub==0.14.1
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
+python-dotenv

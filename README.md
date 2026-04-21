@@ -5,7 +5,7 @@ The system acts like a virtual recruiter — analyzing resumes, identifying skil
 
 ---
 ## 🌐 Live Demo
-* Frontend :  ai-interview-coach-git-main-vanishasharaths-projects.vercel.app
+* Frontend :  ai-interview-coach-three-rosy.vercel.app
 * Backend API : https://interviewcoach-1-eden.onrender.com  
 ----
 ## 🎯 Objectives

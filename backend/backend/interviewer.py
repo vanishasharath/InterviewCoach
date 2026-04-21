@@ -63,14 +63,12 @@ Instructions:
 
     try:
         response = client.chat(
-            model="command-a-03-2025",
-            messages=[
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": user_message},
-            ],
+            model="command-r-plus",
+            messages=user_message,
+            preamble=SYSTEM_PROMPT,
         )
 
-        raw = response.message.content[0].text.strip()
+        raw = response.text
 
         # Strip ```json fences if Cohere wraps output
         raw = re.sub(r"^```(?:json)?\s*", "", raw)

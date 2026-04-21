@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 # -------------------------------------------------------------------
 # Configuration
 # -------------------------------------------------------------------
-SKILL_CORPUS_PATH = "backend/skill_corpus.txt"
+SKILL_CORPUS_PATH = Path(__file__).parent / "skill_corpus.txt"
 DEFAULT_SPACY_MODEL = "en_core_web_sm"
 MIN_TEXT_LENGTH = 50
 
@@ -43,6 +43,8 @@ class SkillCorpusLoader:
 
     @classmethod
     def load_corpus(cls, filepath: str = SKILL_CORPUS_PATH) -> Set[str]:
+        if filepath is None:
+           filepath = Path(__file__).parent / "skill_corpus.txt"
         if cls._corpus_cache is not None:
             return cls._corpus_cache
 

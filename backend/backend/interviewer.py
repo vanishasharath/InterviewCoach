@@ -63,7 +63,7 @@ Instructions:
 
     try:
         response = client.chat(
-            model="command-r-plus",
+            model="command-a-03-2025",
             message=user_message,
             preamble=SYSTEM_PROMPT,
         )

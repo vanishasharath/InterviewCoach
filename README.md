@@ -72,6 +72,7 @@ Never repeats questions — tracks full conversation history
 Probes missing skills specifically identified from JD
 
 Full session report with per-question breakdown and average score
+
 ---
 
 ## ⚙️ How It Works
@@ -97,6 +98,7 @@ Full session report with per-question breakdown and average score
 * Next question selected based on score and history
 * Questions never repeat — full history tracked per session
 * After 8 questions or manual end → full report generated
+  
 ---
 ## 🧰 Technologies & Tools
 
@@ -131,6 +133,7 @@ JavaScript / JSX
 ### 📄 Data
 
 skill_corpus.txt – canonical skills reference list
+
 ---
 
 ```
@@ -159,6 +162,7 @@ AI-InterviewCoach/
 └── README.md
 ```
 ---
+
 🚀 Quickstart
 
 Backend
@@ -180,6 +184,8 @@ cd frontend
 npm install
 
 npm start
+
+---
 
 ## 🧠 Key Concepts Demonstrated
 

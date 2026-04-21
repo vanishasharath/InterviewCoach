@@ -64,7 +64,7 @@ Instructions:
     try:
         response = client.chat(
             model="command-r-plus",
-            messages=user_message,
+            message=user_message,
             preamble=SYSTEM_PROMPT,
         )
 

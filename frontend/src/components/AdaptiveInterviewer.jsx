@@ -4,11 +4,7 @@ import axios from "axios";
 
 const API_BASE_URL = process.env.REACT_APP_API_URL;
 
-const _DIFF = {
-  easier: { bg: "#fff3cd", color: "#856404", label: "↓ Easier" },
-  same:   { bg: "#d1ecf1", color: "#0c5460", label: "→ Same level" },
-  harder: { bg: "#f8d7da", color: "#721c24", label: "↑ Harder" },
-};
+
 
 export default function AdaptiveInterview({ result, jobDescription }) {
   const [phase, setPhase] = useState("idle");

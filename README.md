@@ -163,9 +163,9 @@ AI-InterviewCoach/
 ```
 ---
 
-🚀 Quickstart
+## 🚀 Quickstart
 
-Backend
+### Backend
 
 cd backend
 
@@ -177,7 +177,7 @@ pip install -r requirements.txt
 
 uvicorn backend.main:app --reload
 
-Frontend
+### Frontend
 
 cd frontend
 

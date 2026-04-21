@@ -1,142 +1,193 @@
-AI-InterviewCoach
+# AI Interview Coach — Resume JD Analyzer + Adaptive Interviewer
 
-📌 Overview
+An AI-powered full-stack system that evaluates how well a candidate's resume matches a job description and conducts a live adaptive interview that reacts to answers in real time using Cohere LLM.
+The system acts like a virtual recruiter — analyzing resumes, identifying skill gaps, scoring semantic similarity, and then dynamically interviewing the candidate based on those gaps.
+---
+## 🌐 Live Demo
+* Frontend : ai-interview-coach-three-rosy.vercel.app
+* Backend API : https://interviewcoach-1-eden.onrender.com  
+----
+## 🎯 Objectives
 
-AI-InterviewCoach is an AI-powered resume–JD analysis and interview preparation system that evaluates how well a candidate’s resume matches a job description, identifies missing skills, generates personalized improvement suggestions, and produces tailored interview questions based on gaps.
-Built using FastAPI (Python) for the backend and React for the frontend, the system performs NLP-based skill extraction, semantic similarity scoring, and experience-based evaluation to deliver a complete readiness assessment.
-It acts like a smart recruiter: analyzing resumes, comparing them with JDs, scoring compatibility, and preparing the user for interviews.
+* Provide a comprehensive resume vs JD match analysis.
+* Extract and compare skills from resume, project sections, certifications, and JD.
+* Compute semantic match using transformer embeddings.
+* Highlight matched, unmatched, and missing skills.
+* Generate personalized interview questions based on weaknesses or required skills.
+* Suggest resume improvements aligned with industry ATS standards.
+* Simulate a live adaptive interview where the questions adapt based on the candidates answer.
+* Provide scorecard and feedback for each answer.
+---
 
-🎯 Objectives
+## 🚀 Features
 
-Provide a comprehensive resume vs JD match analysis.
-Extract and compare skills from resume, project sections, certifications, and JD.
-Compute semantic match using transformer embeddings.
-Highlight matched, unmatched, and missing skills.
-Generate personalized interview questions based on weaknesses or required skills.
-Suggest resume improvements aligned with industry ATS standards.
+### 📄 Resume Analysis
 
-🧠 Key Features
+Upload Resume (PDF / DOCX) and paste Job Description
+  
+Dual scoring system:
 
-📄 Resume & JD Matching Engine
-Computes two readiness scores:
-✔ Score (With Experience)
-✔ Score (Without Experience)
+* With Experience Score — weighted match including years of experience
+* Without Experience Score — pure skill and semantic match
 
 Includes individual breakdowns:
-Skills Match %
-Semantic Match %
-Experience Match %
 
-🔍 Skill Extraction & Categorization
-Extracts skills from:
-Resume,
-Projects section,
-Certifications section,
-Job Description,
+* Skills Match %
+* Semantic Match %
+* Experience Match %
 
-Categorizes into:
-Resume Skills,
-Project Skills,
-Certification Skills,
+Skill extraction from Resume, Projects, and Certifications
 
-🧮 Semantic Similarity Scoring
+Semantic similarity using Cohere Embed API (fully cloud-based, no local model loading)
 
-Uses SentenceTransformer MiniLM-L6-v2 to compute:
-Resume phrase ↔ JD phrase similarity,
-Synonym/related-term matching,
-Context-based alignment beyond exact keywords.
+Identifies Matched Skills and Missing Skills
 
-🎯 Matched & Missing Skills
+ATS-focused resume improvement suggestions
 
-The system produces:
-✔ Matched Skills (present in both Resume & JD),
-❌ Missing Skills (required by JD but not found in Resume),
-
-💡 Resume Improvement Suggestions
-
-🗣️ AI-Generated Interview Questions
+AI-generated interview questions 
 
 Generated dynamically based on:
-Missing skills,
-Weak skill categories,
-Unfamiliar technologies,
-General behavioral patterns,
+
+* Missing skills,
+* Weak skill categories,
+* Unfamiliar technologies,
+* General behavioral patterns,
+
+### 🎙 Adaptive AI Interviewer
+
+Starts a live interview session based on resume analysis results
+
+Questions adapt in real time based on answer quality:
+
+* Score ≥ 0.75 → harder question on a new topic
+* Score 0.4–0.74 → same difficulty, new topic
+* Score < 0.4 → hint provided, easier question
 
 
-🏗️ Architecture Flow
+Powered by Cohere command-a-03-2025
 
-Resume + JD Uploaded → Text Extraction → NLP Skill Extraction → Semantic Similarity → Match Scores → Suggestions → Tailored Interview Questions
+Never repeats questions — tracks full conversation history
 
-User uploads Resume + JD via frontend,
-Backend extracts text using PDF/DOCX readers,
-spaCy pipeline extracts skills, keywords, entities,
-Sentence-transformer computes semantic vectors,
+Probes missing skills specifically identified from JD
 
-Cosine similarity produces:
-Skills Match,
-Semantic Match,
-Experience Match,
+Full session report with per-question breakdown and average score
+---
 
-System identifies:
-Resume Skills,
-Project Skills,
-Certification Skills,
-Matched Skills,
-Missing Skills,
+## ⚙️ How It Works
 
-Improvement suggestions generated,
-Interview questions generated from gaps,
-Results displayed on frontend
+### Resume Analysis Pipeline
 
-🧰 Technologies & Tools
+* User uploads Resume + pastes Job Description
+* Text extracted from PDF/DOCX using PyPDF2/python-docx
+* spaCy NLP pipeline extracts skills and keywords
+* Cohere Embed API generates sentence embeddings (via API call, not local model)
+* Cosine similarity computes semantic match score
+* System identifies matched and missing skills
+* Improvement suggestions and interview questions generated
+* Results displayed on frontend
 
-🔧 Backend
+### Adaptive Interview Pipeline
 
-FastAPI – API server,
-spaCy NLP – tokenization, phrase extraction,
-SentenceTransformer (MiniLM-L6-v2) – embeddings,
-NumPy – similarity math,
-PyPDF2 / python-docx – Resume/JD parsing,
-Uvicorn – server runtime,
+* Analysis results passed to interview module
+* Session created with missing skills and JD context
+* Cohere LLM generates first question based on analysis
+* Candidate types answer → submitted to backend
+* Cohere evaluates answer: scores 0.0–1.0, generates feedback
+* Next question selected based on score and history
+* Questions never repeat — full history tracked per session
+* After 8 questions or manual end → full report generated
+---
+## 🧰 Technologies & Tools
 
-🎨 Frontend
+### 🔧 Backend
 
-React – single-page application,
-Axios – API communication,
-JavaScript / JSX,
+Python + FastAPI – Rest API server
 
-📄 Data
+spaCy NLP – tokenization, phrase extraction
+
+Cohere Embed - APISemantic embeddings (cloud-based)
+
+Cohere command-a-03-2025 - Adaptive interview AI + answer evaluation
+
+SentenceTransformer (MiniLM-L6-v2) – embeddings
+
+NumPy – similarity math
+
+PyPDF2 / python-docx – Resume/JD parsing
+
+Uvicorn – server runtime
+
+python-dotenvEnvironment variable management
+
+### 🎨 Frontend
+
+React – single-page application
+
+Axios – API communication
+
+JavaScript / JSX
+
+### 📄 Data
+
 skill_corpus.txt – canonical skills reference list
+---
 
-📂 Project Structure
+```
 AI-InterviewCoach/
 ├── backend/
-│   ├── main.py                  # FastAPI backend entrypoint
-│   ├── extractor.py             # Resume/JD text extraction (PDF/DOCX)
-│   ├── analyzer.py              # Resume-JD evaluation + scoring
-│   ├── similarity.py            # Embedding similarity model (MiniLM)
-│   ├── questions.py             # Tailored interview question generator
-│   └── skill_corpus.txt         # Skills dataset
+│   ├── main.py              # FastAPI entrypoint + all endpoints
+│   ├── interviewer.py       # Adaptive interview engine (Cohere)
+│   ├── extractor.py         # Resume/JD parsing and NLP
+│   ├── analyzer.py          # Scoring and evaluation logic
+│   ├── similarity.py        # Semantic similarity (Cohere Embed API)
+│   ├── questions.py         # Interview question generator
+│   └── skill_corpus.txt     # Skill dataset
 │
 ├── frontend/
-│   ├── public/                  
-│   ├── src/                     # React UI
-│   ├── package.json
-│   └── package-lock.json
+│   ├── public/
+│   └── src/
+│       ├── App.js                        # Main app + routing
+│       └── components/
+│           ├── AdaptiveInterviewer.jsx   # Live adaptive interview UI
+│           ├── AnalysisResult.jsx        # Resume analysis results
+│           ├── AddResumeJS.jsx           # Upload page
+│           └── UploadUI.css
 │
+├── .env                     # API keys (never commit this)
 ├── requirements.txt
 └── README.md
-
+```
+---
 🚀 Quickstart
 
 Backend
-python3 -m venv .venv,
-source .venv/bin/activate,
-pip install -r requirements.txt,
-python backend/main.py,
+
+cd backend
+
+python3 -m venv .venv
+
+source .venv/bin/activate
+
+pip install -r requirements.txt
+
+uvicorn backend.main:app --reload
 
 Frontend
-cd frontend,
-npm install,
-npm start,
 
+cd frontend
+
+npm install
+
+npm start
+
+## 🧠 Key Concepts Demonstrated
+
+* NLP-based skill extraction with spaCy
+* Semantic similarity using Cohere Embed API (cloud inference)
+* Resume–JD ATS-style matching system
+* Cosine similarity and vector comparison
+* Adaptive AI interviewing with real-time LLM evaluation
+* Multi-turn conversation management with session state
+* Full-stack integration: React + FastAPI
+* REST API design with Pydantic validation
+* Cloud deployment: Vercel + Render (free tier optimised)

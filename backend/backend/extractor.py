@@ -234,22 +234,37 @@ def extract_contact_info(text: str) -> Dict[str, Optional[str]]:
 
 def categorize_skills(skills: List[str], text: str) -> Dict[str, List[str]]:
     text_lower = text.lower()
-    project_kw = ["project", "developed", "built", "implemented"]
-    cert_kw = ["certified", "certification"]
+    
+    project_skills = []
+    cert_skills = []
+    resume_skills = []
 
-    result = {
+    # Split text into sections
+    lines = text_lower.split('\n')
+    
+    current_section = "resume"
+    for line in lines:
+        if any(k in line for k in ["project", "projects"]):
+            current_section = "project"
+        elif any(k in line for k in ["certif", "certification"]):
+            current_section = "cert"
+        elif any(k in line for k in ["experience", "education", "skill"]):
+            current_section = "resume"
+        
+        for skill in skills:
+            if skill in line:
+                if current_section == "project":
+                    project_skills.append(skill)
+                elif current_section == "cert":
+                    cert_skills.append(skill)
+
+    # All skills go to resume_skills
+    # project/cert are subsets based on where they appear
+    return {
         "resume_skills": skills,
-        "project_skills": [],
-        "certification_skills": [],
+        "project_skills": sorted(set(project_skills)),
+        "certification_skills": sorted(set(cert_skills)),
     }
-
-    for skill in skills:
-        if any(k in text_lower for k in project_kw):
-            result["project_skills"].append(skill)
-        if any(k in text_lower for k in cert_kw):
-            result["certification_skills"].append(skill)
-
-    return result
 
 
 def extract_information(text: str) -> Dict:

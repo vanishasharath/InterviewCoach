@@ -6,8 +6,10 @@ The system acts like a virtual recruiter — analyzing resumes, identifying skil
 ---
 ## 🌐 Live Demo
 * Frontend :  https://ai-interview-coach-three-rosy.vercel.app
-* Backend API : https://interviewcoach-1-eden.onrender.com  
+* Backend API : https://interviewcoach-1-eden.onrender.com
+
 ----
+
 ## 🎯 Objectives
 
 * Provide a comprehensive resume vs JD match analysis.
@@ -198,3 +200,5 @@ npm start
 * Full-stack integration: React + FastAPI
 * REST API design with Pydantic validation
 * Cloud deployment: Vercel + Render (free tier optimised)
+
+---

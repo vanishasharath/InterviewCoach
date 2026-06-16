@@ -114,8 +114,6 @@ Cohere Embed - APISemantic embeddings (cloud-based)
 
 Cohere command-a-03-2025 - Adaptive interview AI + answer evaluation
 
-SentenceTransformer (MiniLM-L6-v2) – embeddings
-
 NumPy – similarity math
 
 PyPDF2 / python-docx – Resume/JD parsing
